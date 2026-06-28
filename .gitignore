@@ -1,0 +1,30 @@
+# ===== Artefactos de PyCaret / experimentos de ML =====
+logs.log
+catboost_info/
+mlruns/
+*.pkl
+*.joblib
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ===== Entornos virtuales =====
+venv/
+.venv/
+env/
+ENV/
+rv/
+
+# ===== Cache de Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===== Sistema operativo =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE / editores =====
+.idea/
+*.swp
