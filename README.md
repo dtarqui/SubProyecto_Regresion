@@ -83,7 +83,7 @@ El notebook sigue el flujo completo:
 ## Cómo ejecutar
 
 > 📌 **El notebook ya está ejecutado con todas sus salidas guardadas** (tablas, gráficos y
-> resultados). Para **leer/calificar** el proyecto **no hace falta instalar nada**: basta
+> resultados). Para **leer** el proyecto **no hace falta instalar nada**: basta
 > abrir el `.ipynb` en GitHub o en Jupyter. Los pasos siguientes solo son necesarios si se
 > desea **volver a ejecutarlo**.
 
@@ -123,8 +123,9 @@ En Jupyter: menú **Kernel → Restart & Run All** para reproducir todos los res
 
 ## Integrantes
 
-- INTEGRANTE_1 — email_1
-- INTEGRANTE_2 — email_2
-- INTEGRANTE_3 — email_3
+- Daniel Tarqui
+- David Rivas
+- Harold Sanchez
+- Jonas Maidana
 
 > Reemplazar con los nombres y correos reales del equipo antes de la entrega.
