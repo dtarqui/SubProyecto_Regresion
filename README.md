@@ -127,5 +127,3 @@ En Jupyter: menú **Kernel → Restart & Run All** para reproducir todos los res
 - David Rivas
 - Harold Sanchez
 - Jonas Maidana
-
-> Reemplazar con los nombres y correos reales del equipo antes de la entrega.
