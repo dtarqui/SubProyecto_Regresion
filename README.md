@@ -22,10 +22,13 @@ regresión con regularización** que:
 ```
 .
 ├── _data/
-│   ├── dataset.csv             # Dataset (1460 x 81)
+│   ├── dataset.csv             # Dataset de entrenamiento (1460 x 81, con SalePrice)
+│   ├── test.csv                # Conjunto de prueba de Kaggle (1459 x 80, sin SalePrice)
 │   └── data_description.txt    # Diccionario de datos
 ├── MFSDv1p1_Regresion Avanzada con PyCaret.ipynb   # Notebook completo y ejecutado
+├── submission.csv              # Predicciones generadas para subir a Kaggle
 ├── presentaciones/             # Material de clase de referencia
+├── requirements.txt            # Dependencias con versiones fijadas
 └── README.md
 ```
 
@@ -50,8 +53,13 @@ El notebook sigue el flujo completo:
      modelos de *ensemble*: Random Forest, Gradient Boosting, LightGBM).
    - **Regresión Lineal** (OLS, baseline interpretable).
    - **Ridge**, **Lasso** y **ElasticNet** con `GridSearchCV` para hallar el **λ óptimo**.
-8. **Análisis de residuos** — gráficos de residuos, Q-Q plot y estadístico de Durbin-Watson.
-9. **Predicción y conclusiones** — interpretación de negocio y variables más significativas.
+8. **Validación cruzada (K-Fold)** — además del hold-out 80/20, se evalúan los modelos con
+   CV de 10 folds para una estimación robusta y estable.
+9. **Análisis de residuos** — gráficos de residuos, Q-Q plot y estadístico de Durbin-Watson.
+10. **Predicción y conclusiones** — interpretación de negocio y variables más significativas.
+11. **Validación externa (Kaggle)** — el modelo final se aplica al `test.csv` oficial de la
+    competencia *House Prices – Advanced Regression Techniques* y se exporta `submission.csv`
+    para contrastar el desempeño contra el leaderboard.
 
 ## Resultados principales
 
